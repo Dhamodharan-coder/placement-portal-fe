@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+nav{
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.749);
+  }
+nav img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer{
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.749);
+}
+  body{
+    background-color: rgb(231, 231, 231);
+  }
+
+  .togglebar ul li{
+    padding: 10px;
+  }
+  .togglebar .toggle{
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.749);
+  }
+  .togglebar ul .active{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+.togglebar ul li:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.contentbox{
+  background: rgba( 255, 255, 255, 1 );
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.242);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.contentbox form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #3730A3;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
