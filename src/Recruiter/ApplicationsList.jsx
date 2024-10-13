@@ -176,7 +176,7 @@ const ApplicationsList = () => {
                                                         <p className="text-gray-900 whitespace-no-wrap">{user.cgpa}</p>
                                                     </td>
                                                     <td className="px-5 py-5 border-b border-gray-200 bg-white cursor-pointer text-sm text-center">
-                                                        <a href={`http://localhost:3000/${user.resume}`} className='text-blue-600 hover:text-blue-800'>Download</a>
+                                                        <a href={`https://dhru-placement-portal.onrender.com/${user.resume}`} className='text-blue-600 hover:text-blue-800'>Download</a>
                                                     </td>
                                                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
                                                         <select name="status" className="border border-gray-400 rounded-md" onChange={(e) => formik.setFieldValue('status', e.target.value)}>
