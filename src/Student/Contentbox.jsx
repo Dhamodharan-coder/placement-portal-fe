@@ -767,7 +767,7 @@ const {setnavimage,setlinechartselect,setlinechartreject} = useContext(Pipeline)
                         </div>
 <div  className='contentbox'>
 {
-  filteredallapplydetails > 0? (
+  filteredallapplydetails.length > 0? (
     <div> 
        {
       filteredallapplydetails.map((a, index) => (
