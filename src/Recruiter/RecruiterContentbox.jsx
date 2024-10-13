@@ -437,7 +437,7 @@ shortlistdetails();
                             />
                         </div>
                         <div className="overflow-x-auto m-6">
-                            <div className="min-w-full shadow rounded-lg overflow-hidden">
+                            <div className="min-w-full shadow rounded-lg">
                             <form onSubmit={formiktwo.handleSubmit}>
                             <table className="mx-auto">
             <thead>
