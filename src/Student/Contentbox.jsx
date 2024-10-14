@@ -232,7 +232,7 @@ const {setnavimage,setlinechartselect,setlinechartreject} = useContext(Pipeline)
       applydetails();
       interviewlink();
       shortlistdetails();
-    },[]);
+    },[filteredalljobpostings,filteredallapplydetails,alljobpostings,allapplieddetails]);
   
     const chartselectedstatus= allapplieddetails.filter((e)=>e.status === "shortlisted");
     const chartreselectedstatus= allapplieddetails.filter((e)=>e.status === "rejected" || e.status === "pending");

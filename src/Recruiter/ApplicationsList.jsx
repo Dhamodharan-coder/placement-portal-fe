@@ -73,7 +73,7 @@ const ApplicationsList = () => {
     return (
         <div>
             <RecruiterNavbar />
-            <div className="m-4 contentbox h-screen">
+            <div className="m-4 contentbox">
                 <div className="container mx-auto px-4 sm:px-8">
                     <div className="py-8">
                         <div className='my-5 text-right'>

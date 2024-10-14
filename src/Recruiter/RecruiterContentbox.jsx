@@ -242,7 +242,7 @@ const response = await axios.get("https://dhru-placement-portal.onrender.com/rec
   setshortlist(response.data)
 }
 const filteredshortlist = shortlist.filter(application => {
-  const user = application.interviewalldetails[0]?.all_lists[0].userdetails[0];  // Safely access userdetails
+  const user = application.interviewalldetails[0]?.interviewalldetails[0].all_lists[0].userdetails[0];  // Safely access userdetails
 
   if (!user) {
     return false;  // Skip if user is undefined or does not exist
@@ -721,7 +721,7 @@ shortlistdetails();
                                                     <p className="text-gray-900 whitespace-no-wrap">{index+1}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].userdetails[0].name}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].name}</p>
                                                    
                                                                {
                                                                 view ?( <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -737,16 +737,16 @@ shortlistdetails();
                                                                                           
                                                                                               <div className="relative h-32 w-32 rounded-full overflow-hidden cursor-pointer">
                                                                                                     <div className='h-full w-full bg-gray-200 flex items-center justify-center'>
-                                                                                                        <img src={`${e.interviewalldetails[0].all_lists[0].userdetails[0].image}`} className='h-full w-full object-cover' alt="student profile" />
+                                                                                                        <img src={`${e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].image}`} className='h-full w-full object-cover' alt="student profile" />
                                                                                                     </div>
                                                                                                     </div>
                                                                                               <div className="mt-2">
-                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Name: </span>{e.interviewalldetails[0].all_lists[0].userdetails[0].name}</p>
-                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Email: </span>{e.interviewalldetails[0].all_lists[0].userdetails[0].email}</p>
-                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>CGPA: </span>{e.interviewalldetails[0].all_lists[0].userdetails[0].cgpa}</p>
-                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Skills: </span>{e.interviewalldetails[0].all_lists[0].userdetails[0].skills}</p>
-                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Degree: </span>{e.interviewalldetails[0].all_lists[0].userdetails[0].degree}</p>
-                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Number: </span>{e.interviewalldetails[0].all_lists[0].userdetails[0].number}</p>
+                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Name: </span>{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].name}</p>
+                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Email: </span>{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].email}</p>
+                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>CGPA: </span>{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].cgpa}</p>
+                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Skills: </span>{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].skills}</p>
+                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Degree: </span>{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].degree}</p>
+                                                                                                  <p className="text-sm text-gray-500"><span className='font-bold text-gray-950'>Number: </span>{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].number}</p>
                                                                                               </div>
                                                                                           </div>
                                                                                       </div>
@@ -763,22 +763,22 @@ shortlistdetails();
                                                          
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].userdetails[0].email}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].email}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].applicationdata[0].jobrole}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].applicationdata[0].jobrole}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].userdetails[0].degree}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].degree}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
                                                     <span  className="bg-indigo-600 text-white px-3 py-2 rounded cursor-pointer" onClick={()=>{setview(true)}}>View</span>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].userdetails[0].cgpa}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].cgpa}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white cursor-pointer text-sm text-center">
-                                                    <a href={`https://dhru-placement-portal.onrender.com/${e.interviewalldetails[0].all_lists[0].userdetails[0].resume}`} className='text-blue-600 hover:text-blue-800'>Download</a>
+                                                    <a href={`https://dhru-placement-portal.onrender.com/${e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].resume}`} className='text-blue-600 hover:text-blue-800'>Download</a>
                                                 </td>
                                                
                                                
