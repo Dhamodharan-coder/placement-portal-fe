@@ -786,7 +786,7 @@ shortlistdetails();
                                           
                                               
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
-                                                    <button  className="bg-red-600 text-white px-3 py-2 rounded" onClick={()=>shortlisthandledelete(e._id)}>Delete</button>
+                                                    <button  className="bg-red-600 text-white px-3 py-2 rounded" onClick={()=>shortlisthandledelete(e.interviewalldetails[0].all_lists[0].applicationdata[0]._id)}>Delete</button>
                                                 </td>
                                             </tr>
                                                ))
