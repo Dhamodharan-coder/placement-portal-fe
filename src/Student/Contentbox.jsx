@@ -212,7 +212,7 @@ const {setnavimage,setlinechartselect,setlinechartreject} = useContext(Pipeline)
     };
 
     const filteredshortlist = shortlist.filter(application => {
-      const user = application?.interviewalldetails?.[0]?.all_lists?.[0]?.applicationdata?.[0];
+      const user = application?.interviewalldetails?.[0]?.interviewalldetails?.[0]?.all_lists?.[0]?.applicationdata?.[0];
       const status = application
       return (
         user?.jobrole?.toLowerCase()?.includes(searchQuery.toLowerCase()) ||
