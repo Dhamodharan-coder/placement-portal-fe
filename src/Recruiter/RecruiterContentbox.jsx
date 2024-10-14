@@ -211,8 +211,7 @@ const formiktwo = useFormik({
 const formikthree = useFormik({
   initialValues: {
     shortlistresult:"",
-    userid:"",
-    applicationid:""
+    id: ""
   },
   onSubmit: async (values) => {
     console.log("values",values)
@@ -670,7 +669,7 @@ shortlistdetails();
                                                 </td>
                                               
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
-                                                    <button type="submit"  className="bg-indigo-600 text-white px-3 py-2 rounded" onClick={()=>{formikthree.setFieldValue('userid', e.interviewalldetails[0].all_lists[0].userdetails[0]._id),formikthree.setFieldValue('applicationid', e.interviewalldetails[0].all_lists[0].applicationdata[0]._id)}}>Save</button>
+                                                    <button type="submit"  className="bg-indigo-600 text-white px-3 py-2 rounded" onClick={()=>{formikthree.setFieldValue('id', e._id)}}>Save</button>
                                                 </td>
                                             </tr>
                                                ))
