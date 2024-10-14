@@ -127,7 +127,7 @@ const response = await axios.get("https://dhru-placement-portal.onrender.com/rec
   headers: {
     Authorization: `Bearer ${token}`,
   }});
-  console.log(response.data)
+ 
 setinterviewlist(response.data)
 }
 const filteredApplications = interviewlist.filter(application => {
@@ -215,6 +215,7 @@ const formikthree = useFormik({
     applicationid:""
   },
   onSubmit: async (values) => {
+    console.log("values",values)
       try {
         const result = confirm("Are You Sure?");
         if(result){
@@ -669,7 +670,7 @@ shortlistdetails();
                                                 </td>
                                               
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
-                                                    <button type="submit"  className="bg-indigo-600 text-white px-3 py-2 rounded" onClick={()=>{formikthree.setFieldValue('userid', e.interviewalldetails[0].all_lists[0].userdetails[0]._id),formikthree.setFieldValue('applicationid', e.interviewalldetails[0].all_lists[0].applicationdata._id)}}>Save</button>
+                                                    <button type="submit"  className="bg-indigo-600 text-white px-3 py-2 rounded" onClick={()=>{formikthree.setFieldValue('userid', e.interviewalldetails[0].all_lists[0].userdetails[0]._id),formikthree.setFieldValue('applicationid', e.interviewalldetails[0].all_lists[0].applicationdata[0]._id)}}>Save</button>
                                                 </td>
                                             </tr>
                                                ))
