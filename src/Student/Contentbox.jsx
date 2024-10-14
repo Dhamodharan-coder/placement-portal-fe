@@ -1015,28 +1015,28 @@ const {setnavimage,setlinechartselect,setlinechartreject} = useContext(Pipeline)
                                                     <p className="text-gray-900 whitespace-no-wrap">{index+1}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].userdetails[0].name}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].name}</p>
                                                   
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].userdetails[0].email}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].email}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].userdetails[0].degree}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].userdetails[0].degree}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].applicationdata[0].jobrole}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].applicationdata[0].jobrole}</p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].applicationdata[0].salaryoffer}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].applicationdata[0].salaryoffer}</p>
                                                 </td>
                           
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].applicationdata[0].companyname}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].applicationdata[0].companyname}</p>
                                                 </td>
                                         
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].all_lists[0].applicationdata[0].location}</p>
+                                                    <p className="text-gray-900 whitespace-no-wrap">{e.interviewalldetails[0].interviewalldetails[0].all_lists[0].applicationdata[0].location}</p>
                                                 </td>
                                                
                                                 <td className={`px-5 py-5 border-b ${e.shortliststatus === "Selected"?"bg-green-700":e.shortliststatus === "rejected"? "bg-red-700":""} border-gray-200  text-sm text-center`}>
