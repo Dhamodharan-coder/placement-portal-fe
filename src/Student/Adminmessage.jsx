@@ -20,7 +20,6 @@ const Adminmessage = () => {
   const adminnotifications = async () => {
     try {
       const response = await axios.get('https://dhru-placement-portal.onrender.com/student/admin_notifications');
-      console.log(response.data);
       setAdminNotification(response.data);
     } catch (error) {
       console.error('Error fetching notifications details:', error);

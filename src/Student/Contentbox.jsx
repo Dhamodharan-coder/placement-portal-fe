@@ -151,7 +151,6 @@ const {setnavimage,setlinechartselect,setlinechartreject} = useContext(Pipeline)
         },
       });
       setallapplieddetails(response.data);
-      console.log(response.data)
     };
 
 
@@ -204,6 +203,7 @@ const {setnavimage,setlinechartselect,setlinechartreject} = useContext(Pipeline)
             Authorization: `Bearer ${token}`,
           },
         });
+        console.log(response.data)
         setshortlist(response.data);   
       } catch (error) {
         console.error('Error fetching interview link details:', error);
@@ -223,7 +223,7 @@ const {setnavimage,setlinechartselect,setlinechartreject} = useContext(Pipeline)
       );
     });
    
-    
+    // console.log(filteredshortlist)
   
     // useEffect to fetch user details, job postings, and applied details on component mount
     useEffect(() => {
