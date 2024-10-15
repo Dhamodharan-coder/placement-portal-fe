@@ -94,7 +94,7 @@ const ApplicationsList = () => {
                         </div>
                         <div className="overflow-x-auto mt-6">
                             <div className="min-w-full shadow rounded-lg">
-                                <table className="min-w-full leading-normal">
+                                  <table className="mx-auto min-w-full table-auto border-collapse">
                                     <thead>
                                         <tr>
                                             <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">S.No</th>
