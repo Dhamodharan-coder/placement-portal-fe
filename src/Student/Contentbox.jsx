@@ -900,15 +900,15 @@ const {setnavimage,setlinechartselect,setlinechartreject} = useContext(Pipeline)
                                         
                                                
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
-                                                <a href={interviewlinks[0].links || "Link"} ><img src='https://img.icons8.com/3d-fluency/94/link.png' className='w-5 h-5 cursor-pointer' alt='Assessment Link'/></a>
+                                                <a href={e.links || "Link"} ><img src='https://img.icons8.com/3d-fluency/94/link.png' className='w-5 h-5 cursor-pointer' alt='Assessment Link'/></a>
                                                 </td>
 
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
-                                                <p className="text-gray-900 whitespace-no-wrap">{formatDate(interviewlinks[0].dates)}</p>
+                                                <p className="text-gray-900 whitespace-no-wrap">{formatDate(e.dates)}</p>
                                                 </td>
 
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
-                                                <p className="text-gray-900 whitespace-no-wrap">{interviewlinks[0].times}</p>
+                                                <p className="text-gray-900 whitespace-no-wrap">{e.times}</p>
                                                 </td>
                                                 
                                                
